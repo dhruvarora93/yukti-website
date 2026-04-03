@@ -4,36 +4,79 @@ import "./about.css";
 export default function About() {
   return (
     <div class="about-container">
-      <Title>About - Yukti Arora</Title>
+      <Title>About me - Yukti Arora</Title>
 
-      <main class="about-content">
-        <h1>About Me</h1>
-
-        <div class="about-text">
+      {/* Section 1: Who am I */}
+      <section class="about-intro">
+        <div class="about-intro-left">
+          <h1>Who am I?</h1>
           <p>
-            As a Counseling Psychology graduate, I am deeply passionate about mental health. I am eager to explore and study in-depth strategic methods of therapeutic interventions for trauma and risk behaviours. My research interests encompass trauma psychology, caregivers' mental health, working with children and adolescents, and understanding counselling from a cross-cultural perspective.
+            I'm a counselling psychologist working across therapy, mental health research, and
+            mentoring students considering psychology.
           </p>
-
           <p>
-            Currently, I am working as a Research Assistant at the School of Nursing, Psychotherapy & Community Health at Dublin City University on The CHUMS Study (Cultural Humility in Mental Health Services). In this role, I contribute to developing an optimised model of cultural humility in mental health care, ensuring it is context-responsive, implementable, and measurable. I am also engaged in a research project with YWP, exploring dissociation in female sex workers in India. This project aims to understand the psychological impacts and coping mechanisms related to dissociation in this demographic, providing insights for better mental health interventions.
+            My psychoanalytic training shapes a reflective, theory-informed practice, attentive to
+            listening, meaning, and the impact of personal and social contexts.
           </p>
-
           <p>
-            Through my experiences at various organisations and on-ground learning, I have developed a comprehensive skill set. I am proficient in communication, program implementation, event management, and content development.
+            I'm especially interested in how psychological ideas are used in real settings, and how
+            this shapes experience over time.
           </p>
+        </div>
+        <div class="about-intro-photos">
+          <img src="/about-photo-1.jpg" alt="Yukti presenting" class="about-photo-top" />
+          <img src="/about-photo-2.jpg" alt="Yukti at Trinity College Dublin" class="about-photo-bottom" />
+        </div>
+      </section>
 
-          <div class="about-links">
-            <a
-              href="https://www.linkedin.com/in/yuktiarora1/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="linkedin-link"
-            >
-              Connect on LinkedIn →
-            </a>
+      {/* Section 2: My Background */}
+      <section class="about-background">
+        <div class="about-background-left">
+          <h2>My Background</h2>
+        </div>
+        <div class="about-background-right">
+          <div class="about-bg-section">
+            <h3>Education</h3>
+            <div class="about-edu-item">
+              <strong>MPhil in Psychoanalytic Studies</strong>
+              <span>Trinity College Dublin</span>
+            </div>
+            <div class="about-edu-item">
+              <strong>MA in Counselling Psychology</strong>
+              <span>Amity University, Noida</span>
+            </div>
+            <div class="about-edu-item">
+              <strong>BA (Hons) in Philosophy</strong>
+              <span>Lady Shri Ram College for Women, University of Delhi</span>
+            </div>
+          </div>
+
+          <div class="about-bg-section">
+            <h3>Research &amp; Academic Work</h3>
+            <p>
+              I currently work as a Research Assistant at Dublin City University, contributing to
+              the CHUMS Study (Cultural HUmility in Mental health Services), a community-based
+              participatory research project focused on culturally responsive mental health care in
+              Ireland. My work involves qualitative research, literature reviews, data analysis, and
+              collaborative engagement with service users and stakeholders.
+            </p>
+            <p>
+              More about the project:{" "}
+              <a
+                href="https://www.dcu.ie/nursing-and-human-sciences/chums-study"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The CHUMS Study
+              </a>
+            </p>
+            <p>
+              My broader research experience includes trauma-informed, community-based, and
+              qualitative projects across diverse populations.
+            </p>
           </div>
         </div>
-      </main>
+      </section>
     </div>
   );
 }

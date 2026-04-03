@@ -13,6 +13,7 @@
     "@solidjs/start": "^1.1.0",
     "dotenv": "^17.2.3",
     "pocketbase": "^0.21.5",
+    "resend": "^6.9.4",
     "solid-js": "^1.9.5",
     "vinxi": "^0.5.7"
   },

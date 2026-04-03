@@ -1,0 +1,108 @@
+.therapy-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: #6b1a1a;
+}
+
+/* ── Intro section ── */
+.therapy-intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4a1010;
+  margin-bottom: 2rem;
+  text-transform: none;
+  max-width: none;
+  text-align: left;
+}
+
+.therapy-intro p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #6b1a1a;
+  margin-bottom: 1.25rem;
+  max-width: none;
+  text-align: left;
+}
+
+.therapy-callout {
+  font-weight: 700;
+  font-size: 1.1rem !important;
+  text-align: center !important;
+  margin: 2rem 0 !important;
+}
+
+/* ── Practical details section ── */
+.therapy-practical {
+  margin-top: 3rem;
+}
+
+.therapy-practical h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4a1010;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  text-transform: none;
+  max-width: none;
+}
+
+.therapy-detail-section {
+  border-top: 1px solid #c9a09a;
+  padding: 1.75rem 0;
+}
+
+.therapy-detail-section h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #4a1010;
+  margin-bottom: 1rem;
+}
+
+.therapy-detail-section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.therapy-detail-section li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #6b1a1a;
+  margin-bottom: 0.4rem;
+}
+
+.therapy-detail-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #6b1a1a;
+  margin-bottom: 1rem;
+  max-width: none;
+  text-align: left;
+}
+
+.therapy-book-btn {
+  display: inline-block;
+  background: #9b4e4e;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.therapy-book-btn:hover {
+  background: #7a3535;
+}
+
+.therapy-footer-note {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #6b1a1a;
+  margin-top: 2.5rem;
+  font-style: italic;
+  max-width: none;
+}

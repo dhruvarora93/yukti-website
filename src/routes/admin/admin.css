@@ -1,0 +1,170 @@
+.admin-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Login */
+.admin-login-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.admin-login-card h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.4rem;
+  color: #1a1a1a;
+}
+
+.admin-login-card p {
+  margin: 0 0 1.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.admin-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.admin-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-field input {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.admin-field input:focus {
+  border-color: #9b4e4e;
+}
+
+.admin-error {
+  color: #c0392b;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.admin-submit {
+  width: 100%;
+  padding: 0.7rem;
+  background: #9b4e4e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.admin-submit:hover {
+  background: #7a3a3a;
+}
+
+/* Enquiries page */
+.admin-enquiries {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 2rem;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.admin-header h1 {
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.admin-logout {
+  padding: 0.4rem 0.9rem;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.admin-logout:hover {
+  background: #eee;
+}
+
+.admin-table-wrap {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.admin-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+  color: #555;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.admin-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: top;
+  color: #333;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-table tr:hover td {
+  background: #fafafa;
+}
+
+.admin-message {
+  max-width: 320px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.admin-empty {
+  text-align: center;
+  color: #999;
+  padding: 3rem;
+}
+
+.admin-badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background: #f0e8e8;
+  color: #6b1a1a;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}

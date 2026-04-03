@@ -1,23 +1,36 @@
 import { MetaProvider, Title } from "@solidjs/meta";
-import { Router } from "@solidjs/router";
+import { Router, useLocation } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
-import { Suspense } from "solid-js";
+import { Show, Suspense } from "solid-js";
 import "./app.css";
 
 export default function App() {
   return (
     <Router
       root={props => {
+        const location = useLocation();
+        const isAdmin = () => location.pathname.startsWith("/admin");
         return (
           <MetaProvider>
             <Title>Yukti</Title>
-            <nav class="main-nav">
-              <a href="/">Home</a>
-              <a href="/blog">Blog</a>
-              <a href="/about">About</a>
-            </nav>
+            <Show when={!isAdmin()}>
+              <header class="site-header">
+                <a href="/" class="site-logo">
+                  <img src="/therapy.png" alt="" class="logo-icon" />
+                  <span class="logo-text">YUKTI<br />ARORA</span>
+                </a>
+                <nav class="main-nav">
+                  <a href="/">Home</a>
+                  <a href="/about">About me</a>
+                  <a href="/therapy">Therapy</a>
+                  <a href="/study-abroad">Study Abroad</a>
+                  <a href="/contact">Contact me</a>
+                </nav>
+                <a href="/admin" class="admin-nav-link">Admin</a>
+              </header>
+            </Show>
             <Suspense>{props.children}</Suspense>
-          </MetaProvider >
+          </MetaProvider>
         )
       }}
     >

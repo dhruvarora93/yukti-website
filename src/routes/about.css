@@ -1,71 +1,143 @@
-/* About Page Styles */
 .about-container {
-  max-width: 800px;
+  max-width: 1050px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 4rem 2rem;
 }
 
-.about-content {
-  background: white;
-  border-radius: 12px;
-  padding: 3rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  text-align: left;
+/* ── Section 1: Who am I ── */
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 5rem;
 }
 
-.about-content h1 {
-  font-size: 2.5rem;
+.about-intro-left h1 {
+  font-size: 2.75rem;
   font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 2rem;
+  color: #4a1c1c;
+  margin-bottom: 1.5rem;
   text-transform: none;
   max-width: none;
   text-align: left;
+  line-height: 1.2;
 }
 
-.about-text p {
-  font-size: 1.125rem;
-  line-height: 1.8;
+.about-intro-left p {
+  font-size: 1rem;
+  line-height: 1.75;
   color: #333;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   max-width: none;
   text-align: left;
 }
 
-.about-links {
-  margin-top: 2.5rem;
+.about-intro-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.about-intro-photos img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  object-fit: cover;
+}
+
+.about-photo-top {
+  grid-column: 1;
+}
+
+.about-photo-bottom {
+  grid-column: 2;
+  margin-top: 2rem;
+}
+
+/* ── Section 2: My Background ── */
+.about-background {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 3rem;
+  align-items: start;
   padding-top: 2rem;
   border-top: 1px solid #e5e5e5;
 }
 
-.linkedin-link {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.75rem 1.5rem;
-  background: #0077b5;
-  color: white !important;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: background 0.2s ease, transform 0.2s ease;
-  margin: 0 !important;
+.about-background-left h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4a1c1c;
+  text-transform: none;
+  max-width: none;
+  text-align: left;
+  line-height: 1.2;
 }
 
-.linkedin-link:hover {
-  background: #005885;
-  transform: translateY(-2px);
+.about-bg-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-bg-section h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #8b2020;
+  border-bottom: 2px solid #8b2020;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.about-edu-item {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-edu-item strong {
+  font-size: 0.95rem;
+  color: #8b2020;
+  font-weight: 600;
+}
+
+.about-edu-item span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.about-bg-section p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #333;
+  margin-bottom: 0.75rem;
+  max-width: none;
+  text-align: left;
+}
+
+.about-bg-section a {
+  color: #8b2020;
+  text-decoration: underline;
+}
+
+.about-bg-section a:hover {
+  color: #4a1c1c;
 }
 
 @media (max-width: 768px) {
-  .about-content {
-    padding: 2rem 1.5rem;
+  .about-intro {
+    grid-template-columns: 1fr;
   }
-  
-  .about-content h1 {
+
+  .about-background {
+    grid-template-columns: 1fr;
+  }
+
+  .about-intro-left h1 {
     font-size: 2rem;
   }
-  
-  .about-text p {
-    font-size: 1rem;
+
+  .about-background-left h2 {
+    font-size: 1.5rem;
   }
 }
