@@ -6,12 +6,16 @@
 }
 
 .home-greeting {
+  font-family: 'DM Serif Display', serif;
   font-size: 3.5rem;
   font-weight: 400;
   color: #4a1c1c;
   margin-bottom: 2.5rem;
   text-transform: none;
   max-width: none;
+  opacity: 0;
+  animation: fadeSlideUp 0.6s ease forwards;
+  animation-delay: 0.1s;
 }
 
 .home-content {
@@ -20,6 +24,12 @@
   gap: 3rem;
   align-items: center;
   text-align: left;
+}
+
+.home-text {
+  opacity: 0;
+  animation: fadeSlideUp 0.6s ease forwards;
+  animation-delay: 0.35s;
 }
 
 .home-text p {
@@ -36,11 +46,248 @@
   color: #4a1c1c;
 }
 
+.home-photo {
+  opacity: 0;
+  animation: fadeSlideUp 0.7s ease forwards;
+  animation-delay: 0.55s;
+}
+
 .home-photo img {
   width: 100%;
   border-radius: 4px;
   border: 6px solid #d4a5a5;
   display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-photo img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(74, 28, 28, 0.2);
+}
+
+/* ── Right place italic ── */
+.home-righplace {
+  font-style: italic;
+  font-size: 1.1rem !important;
+  color: #4a1c1c;
+}
+
+/* ── Service cards ── */
+.home-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+.home-service-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-service-img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  z-index: 1;
+  margin-bottom: -30px;
+}
+
+.home-service-card {
+  background: #9b4e4e;
+  color: white;
+  text-decoration: none;
+  padding: 2rem 2rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  min-height: 100px;
+  width: 100%;
+}
+
+.home-service-card:hover {
+  background: #7a3535;
+  transform: translateY(-3px);
+}
+
+/* ── How I work ── */
+.home-how {
+  background: #f5eaea;
+  border-radius: 10px;
+  padding: 2.5rem 3rem;
+  margin-top: 3.5rem;
+  text-align: left;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home-how-img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.home-how h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #4a1010;
+  margin-bottom: 1rem;
+  max-width: none;
+  text-align: left;
+}
+
+.home-how p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #6b1a1a;
+  margin-bottom: 1.5rem;
+  max-width: none;
+  text-align: left;
+}
+
+.home-learn-btn {
+  display: inline-block;
+  border: 1px solid #9b4e4e;
+  color: #9b4e4e;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.home-learn-btn:hover {
+  background: #9b4e4e;
+  color: white;
+}
+
+/* ── My Approach ── */
+.home-approach {
+  margin-top: 4rem;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 3rem;
+}
+
+.home-approach h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #4a1010;
+  margin-bottom: 2.5rem;
+  max-width: none;
+}
+
+.home-approach-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.home-approach-item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+.home-approach-item h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #8b2020;
+  margin: 0;
+}
+
+.home-approach-item p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+  max-width: none;
+  text-align: left;
+}
+
+/* ── FAQ ── */
+.home-faq {
+  margin-top: 4rem;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 3rem;
+}
+
+.home-faq-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.home-faq-header h2 {
+  margin-bottom: 0;
+}
+
+.home-faq-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.home-faq h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #4a1010;
+  margin-bottom: 2.5rem;
+  max-width: none;
+}
+
+.home-faq-item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+.home-faq-item h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #4a1010;
+  margin: 0;
+}
+
+.home-faq-item p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+  max-width: none;
+  text-align: left;
+}
+
+/* ── Footer note ── */
+.home-footer-note {
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #aaa;
+  text-align: center;
+  max-width: none;
 }
 
 @media (max-width: 700px) {
@@ -54,5 +301,19 @@
 
   .home-greeting {
     font-size: 2.5rem;
+  }
+
+  .home-services {
+    grid-template-columns: 1fr;
+  }
+
+  .home-approach-item,
+  .home-faq-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .home-how {
+    padding: 2rem 1.5rem;
   }
 }

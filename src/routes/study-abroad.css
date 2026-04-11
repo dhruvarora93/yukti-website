@@ -1,0 +1,118 @@
+.study-abroad-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: #6b1a1a;
+}
+
+.study-abroad-intro {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.study-abroad-text {
+  flex: 1;
+}
+
+.study-abroad-intro h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #4a1010;
+  margin-bottom: 1.5rem;
+}
+
+.study-abroad-intro p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #6b1a1a;
+}
+
+.study-abroad-photo {
+  flex-shrink: 0;
+  width: 300px;
+}
+
+.study-abroad-photo img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.study-abroad-link {
+  color: #4a1010;
+  text-underline-offset: 3px;
+}
+
+/* ── Practical details ── */
+.study-abroad-practical {
+  margin-top: 4rem;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 3rem;
+}
+
+.study-abroad-practical h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #4a1010;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.study-abroad-detail-section {
+  margin-bottom: 2.5rem;
+}
+
+.study-abroad-detail-section h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4a1010;
+  margin-bottom: 1rem;
+}
+
+.study-abroad-detail-section ul {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.study-abroad-detail-section li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #6b1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.study-abroad-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.study-abroad-btn {
+  display: inline-block;
+  background: #9b4e4e;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.study-abroad-btn:hover {
+  background: #7a3535;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .study-abroad-intro {
+    flex-direction: column;
+  }
+
+  .study-abroad-photo {
+    width: 100%;
+  }
+}

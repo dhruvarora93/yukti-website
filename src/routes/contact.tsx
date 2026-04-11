@@ -15,9 +15,10 @@ const sendMessage = action(async (formData: FormData) => {
   const about = formData.get("about") as string;
   const message = formData.get("message") as string;
 
-  await Promise.all([
-    saveEnquiry({ first_name: firstName, last_name: lastName, email, phone, about, message }),
-    new Resend(process.env.RESEND_API_KEY).emails.send({
+  await saveEnquiry({ first_name: firstName, last_name: lastName, email, phone, about, message });
+
+  try {
+    await new Resend(process.env.RESEND_API_KEY).emails.send({
       from: "onboarding@resend.dev",
       to: process.env.CONTACT_EMAIL!,
       subject: `[Contact] ${about} — ${firstName} ${lastName}`,
@@ -30,8 +31,10 @@ const sendMessage = action(async (formData: FormData) => {
         <p><strong>Message:</strong></p>
         <p>${message.replace(/\n/g, "<br>")}</p>
       `,
-    }),
-  ]);
+    });
+  } catch (e) {
+    console.error("Email sending failed:", e);
+  }
 
   return { success: true };
 }, "send-message");
@@ -42,9 +45,11 @@ export default function Contact() {
 
   async function handleSubmit(e: SubmitEvent) {
     e.preventDefault();
+    const form = e.target as HTMLFormElement;
     setStatus("sending");
     try {
-      await send(new FormData(e.target as HTMLFormElement));
+      await send(new FormData(form));
+      form.reset();
       setStatus("success");
     } catch {
       setStatus("error");

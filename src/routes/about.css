@@ -14,8 +14,9 @@
 }
 
 .about-intro-left h1 {
+  font-family: 'DM Serif Display', serif;
   font-size: 2.75rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #4a1c1c;
   margin-bottom: 1.5rem;
   text-transform: none;
@@ -45,6 +46,12 @@
   border-radius: 4px;
   display: block;
   object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-intro-photos img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(74, 28, 28, 0.2);
 }
 
 .about-photo-top {
@@ -67,8 +74,9 @@
 }
 
 .about-background-left h2 {
+  font-family: 'DM Serif Display', serif;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #4a1c1c;
   text-transform: none;
   max-width: none;
@@ -122,6 +130,58 @@
 
 .about-bg-section a:hover {
   color: #4a1c1c;
+}
+
+/* ── Publications ── */
+.about-publication {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #eee;
+}
+
+.about-publication:last-child {
+  border-bottom: none;
+}
+
+/* ── Courses list ── */
+.about-courses-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.about-courses-list li {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+/* ── LinkedIn ── */
+.about-linkedin {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+}
+
+.about-linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #0a66c2;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.about-linkedin-btn:hover {
+  background: #084e96;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {

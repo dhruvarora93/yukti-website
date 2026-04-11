@@ -16,7 +16,7 @@ export default function App() {
             <Show when={!isAdmin()}>
               <header class="site-header">
                 <a href="/" class="site-logo">
-                  <img src="/therapy.png" alt="" class="logo-icon" />
+                  <img src="/Mental health-pana.svg" alt="" class="logo-icon" />
                   <span class="logo-text">YUKTI<br />ARORA</span>
                 </a>
                 <nav class="main-nav">
